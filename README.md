@@ -3,9 +3,9 @@ wind-turbine-anomaly-detection
 
 This project detects anomalies in wind turbine SCADA operational data.  I completed this as the final capstone project in the Metis data science bootcamp in the Fall 2018 Chicago cohort.  It's a great program; I'd gladly answer emailed questions about it.
 
-I implmented one main method of finding anomalies through KNN; a kalman filter to act as a check on anomaly detection for individual features; and two main ways of detecting what might be driving the behavior of anomalies: PCA and clustering.  
+I implemented one main method of finding anomalies through KNN, and three ways of detecting what might be driving the behavior of anomalies: a kalman filter, PCA and clustering.  
 
-This pipeline is based on historical data but is stable across time, so can act as a real-time operational check on incoming wind turbine data.  
+This pipeline is based on historical data for KNN, PCA and clustering but each is stable across time, so can act as a real-time operational check on incoming wind turbine data.  
 
 Due to the idiosyncracies of wind turbine operation, this pipeline needs to be repeated for each wind turbine.  The computational needs of these algorithms is very small and so can scale easily.  
 
